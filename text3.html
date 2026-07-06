@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 450px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 6px;
+        }
+
+        .radio {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100px;
+            margin: 5px;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="age" min="1" max="100"></td>
+            </tr>
+
+            <tr>
+                <td>Date</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+
+            <tr>
+                <td>Day</td>
+                <td>
+                    <select name="day">
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Time</td>
+                <td><input type="time" name="time"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input class="radio" type="radio" name="gender" value="Male"> Male
+                    <input class="radio" type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobbies</td>
+                <td>
+                    <select multiple>
+                        <option>Reading</option>
+                        <option>Sports</option>
+                        <option>Music</option>
+                        <option>Gaming</option>
+                        <option>Traveling</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea rows="4" cols="30" placeholder="Enter your address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</div>
+
+</body>
+</html>
