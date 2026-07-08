@@ -1,0 +1,66 @@
+DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form Table</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <!-- Table container for form elements -->
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Field Type</th>
+            <th>Input Element</th>
+        </tr>
+        
+        <!-- 1. Text Field -->
+        <tr>
+            <td><label for="username">Name:</label></td>
+            <td><input type="text" id="username" name="username" placeholder="Enter your name"></td>
+        </tr>
+
+        <!-- 2. List Box (Multi-select dropdown) -->
+        <tr>
+            <td><label for="skills">Skills known:</label></td>
+            <td>
+                <select id="skills" name="skills" size="5" multiple>
+                    <option value="python">PYTHON</option>
+                    <option value="c++">c++</OPTION>
+          	    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+
+<
+                </select>
+            </td>
+        </tr>
+
+       
+
+        <!-- 4. Combo Box (Editable text box with autocomplete dropdown) -->
+        <tr>
+            <td><label for="browser-choice">Browser using:</label></td>
+            <td>
+                <input type="text" id="browser-choice" name="browser" list="browsers" placeholder="Type or select...">
+                <datalist id="browsers">
+                    <option value="Google Chrome">
+                    <option value="Mozilla Firefox">
+                    <option value="Microsoft Edge">
+                    <option value="Safari">
+                </datalist>
+            </td>
+        </tr>
+
+ <!-- 3. Check Box -->
+        <tr>
+            <td>Terms & Conditions:</td>
+            <td>
+                <input type="checkbox" id="agree" name="agree" value="yes">
+                <label for="agree">I agree to the terms</label>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
