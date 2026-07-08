@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select, input[list] {
+            width: 250px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group label {
+            display: inline;
+            margin-bottom: 0;
+            margin-left: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="#" method="POST">
+
+        <!-- 1. Text Field -->
+        <div class="form-group">
+            <label for="username">Full Name (Text Field):</label>
+            <input type="text" id="username" name="username" placeholder="Enter your full name">
+        </div>
+
+        <!-- 2. List Box -->
+        <!-- Adding the 'size' attribute turns a regular dropdown into a visible list box -->
+        <div class="form-group">
+            <label for="skills">Skills (List Box):</label>
+            <select id="skills" name="skills" size="3">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+
+        <!-- 3. Combobox -->
+        <!-- Implemented via standard HTML5 <input list="..."> and <datalist> -->
+        <div class="form-group">
+            <label for="country">Country (Combobox - Type or Select):</label>
+            <input list="countries" id="country" name="country" placeholder="Choose or type...">
+            <datalist id="countries">
+                <option value="United States"></option>
+                <option value="United Kingdom"></option>
+                <option value="India"></option>
+                <option value="Canada"></option>
+                <option value="Australia"></option>
+            </datalist>
+        </div>
+
+        <!-- 4. Checkbox -->
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter (Checkbox)</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Form</button>
+
+    </form>
+
+</body>
+</html>
